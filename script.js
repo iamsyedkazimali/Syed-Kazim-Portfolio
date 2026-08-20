@@ -1,12 +1,10 @@
 const roles = [
-  "CS Student 💻",
-  "Web Developer 🌐",
-  "AI Enthusiast 🤖",
-  "Cyber Security Analyst 💀",
-  "Programmer 👽"
-  
-  
+  "Computer Science Student",
+  "Aspiring Cybersecurity Specialist",
+  "Networking Enthusiast",
+  "Software Developer"
 ];
+
 
 let i = 0;
 let j = 0;
@@ -65,38 +63,123 @@ function openSkillModal(skill) {
   const modal = document.getElementById("skillModal");
 
   const skills = {
-    cpp: { title: "C++", desc: "Powerful OOP language used in system programming and game development. Learned in fundamentals and OOP projects." },
-    csharp: { title: "C#", desc: "Great for Windows and game development (Unity). Used in desktop apps and exploring GUI tools." },
-    java: { title: "Java", desc: "Robust OOP language used for Android and enterprise apps. Learned in semester 2 and used in many projects." },
-    python: { title: "Python (Basics)", desc: "High-level language for AI, ML, and scripting. Exploring for automation and AI projects." },
+  cpp: {
+    title: "C++",
+    desc: "Programming language used in academic and practical projects, including object-oriented programming, file handling, and console-based applications."
+  },
 
-    html: { title: "HTML", desc: "Structure of web pages. Used in building portfolio, Tooly app, and project pages." },
-    css: { title: "CSS", desc: "Styling and layout design for websites. Learned through real projects." },
-    js: { title: "JavaScript", desc: "Makes websites interactive. Used in form handling, modals, and UI features." },
+  java: {
+    title: "Java",
+    desc: "Object-oriented programming language used to build academic projects involving classes, objects, file handling, and application logic."
+  },
 
-    vscode: { title: "VS Code", desc: "Popular lightweight code editor. Used for all web & console-based development." },
-    terminal: {
-    title: "Command Line / Terminal",  desc: "Familiar with using terminal commands for Git, file navigation, compiling code, and running scripts across Linux and Windows environments."},
-    intellij: { title: "IntelliJ", desc: "Professional Java IDE. Used in exploring Java apps with better features." },
-    git: { title: "Git & GitHub", desc: "Version control system and remote repo hosting. Used to track and share projects." },
-    githubAutomation: {
-    title: "GitHub Actions & Automation", desc: "Currently learning GitHub Actions through Microsoft Learn to automate build, test, and deployment processes. Skills include GitHub Script, custom workflows, CI/CD, and DevOps fundamentals."},
-    arduino: { title: "Arduino UNO", desc: "Used in microcontroller-based hardware experiments and basic electronics." },
+  python: {
+    title: "Python (Basics)",
+    desc: "Currently developing foundational Python skills for scripting, automation, programming practice, and future cybersecurity projects."
+  },
 
-    oop: { title: "OOP", desc: "Object-Oriented Programming — foundation of Java/C++ project structure and design." },
-    file: { title: "File Handling", desc: "Read/write from files for real-time data persistence in console-based projects." },
-    ai: { title: "AI/ML Basics", desc: "Fundamentals of artificial intelligence and machine learning explored through online courses." },
-    cyber: {
-    title: "Cybersecurity — Cisco Networking Academy (In Progress)",
-    desc: "Studying core concepts of cybersecurity including threat detection, ethical hacking basics, and secure communication. Focus areas: Risk Management, Cyber Threats, and Network Security."
-    },
+  csharp: {
+    title: "C# (Basics)",
+    desc: "Foundational knowledge of C# syntax, programming concepts, and object-oriented programming."
+  },
 
-    leadership: { title: "Leadership", desc: "Led multiple group projects and team discussions as group leader." },
-    problem: { title: "Problem Solving", desc: "Efficient code design, debugging, and logical solutions to programming tasks." },
-    presentation: { title: "Presentation", desc: "Effectively presenting tech ideas in labs, viva, and project demos." },
-    teamwork: { title: "Teamwork", desc: "Collaborated with group members and distributed work in many college projects." }
-  };
+  sql: {
+    title: "SQL",
+    desc: "Foundational knowledge of relational databases, SQL queries, and working with structured data."
+  },
 
+  cyber: {
+    title: "Cybersecurity Fundamentals",
+    desc: "Developing foundational cybersecurity knowledge including security concepts, cyber threats, risk management, network security, and security awareness."
+  },
+
+  networking: {
+    title: "Computer Networking",
+    desc: "Building foundational knowledge of computer networks, network communication, IP addressing, routing concepts, and TCP/IP."
+  },
+
+  tcpip: {
+    title: "TCP/IP Fundamentals",
+    desc: "Understanding the fundamentals of the TCP/IP model and how network protocols support communication between devices."
+  },
+
+  ip: {
+    title: "IP Addressing",
+    desc: "Understanding IPv4 addressing, network identification, host addressing, and the role of IP addresses in network communication."
+  },
+
+  html: {
+    title: "HTML",
+    desc: "Used to structure web pages and build the semantic foundation of web-based projects."
+  },
+
+  css: {
+    title: "CSS",
+    desc: "Used to style interfaces, create layouts, and build responsive web pages."
+  },
+
+  js: {
+    title: "JavaScript",
+    desc: "Used to add interactivity and functionality to web projects, including forms, modals, navigation, and dynamic interface behavior."
+  },
+
+  react: {
+    title: "React (Basic)",
+    desc: "Foundational knowledge of React components, props, state, and component-based interface development."
+  },
+
+  tailwind: {
+    title: "Tailwind CSS (Basic)",
+    desc: "Foundational experience using utility classes to build and style responsive user interfaces."
+  },
+
+  git: {
+    title: "Git",
+    desc: "Used for version control, tracking project changes, managing repositories, and maintaining development history."
+  },
+
+  github: {
+    title: "GitHub",
+    desc: "Used to host, manage, document, and share software projects and source code."
+  },
+
+  vscode: {
+    title: "Visual Studio Code",
+    desc: "Primary code editor used for web development, programming practice, and project development."
+  },
+
+  terminal: {
+    title: "Command Line / Terminal",
+    desc: "Familiar with command-line operations for file navigation, Git, compiling programs, running scripts, and development workflows."
+  },
+
+  intellij: {
+    title: "IntelliJ IDEA",
+    desc: "Java development environment used for object-oriented programming and Java-based academic projects."
+  },
+
+  oop: {
+    title: "Object-Oriented Programming",
+    desc: "Understanding of classes, objects, encapsulation, inheritance, polymorphism, and object-oriented program structure."
+  },
+
+  dsa: {
+    title: "Data Structures & Algorithms",
+    desc: "Developing foundational knowledge of data structures, algorithms, problem-solving, and algorithmic thinking."
+  },
+
+  file: {
+    title: "File Handling",
+    desc: "Used file input and output to store, retrieve, and manage data in console-based programming projects."
+  },
+
+  database: {
+    title: "Database Fundamentals",
+    desc: "Foundational understanding of structured data, relational databases, database concepts, and SQL."
+  }
+};
+
+  
   const data = skills[skill];
   if (data) {
     title.textContent = data.title;
@@ -124,19 +207,21 @@ function openAchievement(key) {
   const modal = document.getElementById("achievementModal");
 
   const data = {
-    hero: {
-      title: "Hero of Hyderabad Shield",
-      desc: "Awarded for outstanding participation and contributions at a major college-level event. Recognized among top students for tech innovation and leadership."
-    },
-    book: {
-      title: "Author: Periodic Table (Book)",
-      desc: "Inprogres. This educational resource explains chemical elements, their uses, history, and properties — written to help fellow students."
-    },
-    lead: {
-      title: "Lead Developer — Projects",
-      desc: "Led several console-based projects including Cloth Shop System, Library Management, Banking Simulator & more. Responsible for design, code, and team guidance."
-    }
-  };
+  hero: {
+    title: "Hero of Hyderabad Shield",
+    desc: "Recognized for outstanding participation and contribution at a college-level event."
+  },
+
+  book: {
+    title: "Author — Periodic Table Book",
+    desc: "Author of an educational resource about chemical elements, their properties, uses, and history."
+  },
+
+  leadership: {
+    title: "University Leadership",
+    desc: "Served in a student leadership role at HITMS, contributing to class coordination, communication, and academic activities."
+  }
+};
 
   if (data[key]) {
     title.textContent = data[key].title;
@@ -218,14 +303,8 @@ function openCert(certId) {
 
 function closeCertModal() {
   document.getElementById("certModal").style.display = "none";
-
-  
 }
 
-function closeCertModal() {
-  document.getElementById("certModal").style.display = "none";
-
-}
 
 // Close modal when clicking outside
 window.addEventListener("click", function (e) {
@@ -243,26 +322,26 @@ function openProject(id) {
   const desc = document.getElementById("project-description");
 
   const projects = {
-    hospital: {
-      title: "Hospital Management System",
-      image: "media/projects/hospital-code.png",
-      desc: "Java-based OOP console project. Manages patient data, appointments, billing, and stores information in files. You led the team as Group Leader."
-    },
+hospital: {
+  title: "Hospital Management System",
+  image: "media/projects/hospital-code.png",
+  desc: "Java-based object-oriented console application for managing patient records, appointments, billing, and file-based data storage. Developed as a team project. I served as the group leader responsible for coordinating the project..."
+},
     carbike: {
-      title: "Car & Bike Rental System",
-      image: "media/projects/car-rental-code.png",
-      desc: "Java console app with file handling. Users can rent/return vehicles. Generates printable receipts using file I/O."
-    },
+  title: "Car & Bike Rental System",
+  image: "media/projects/car-rental-code.png",
+  desc: "Java console application for managing vehicle rentals and returns, with file-based data storage and receipt generation."
+},
     atm: {
-      title: "Banking System (ATM Simulation)",
-      image: "media/projects/atm-simulator-output.png",
-      desc: "C++ based ATM simulator with secure PIN login, deposit, withdraw, and transfer options. Features: 4-digit PIN validation, PIN reset, secure transactions."
-    },
+  title: "ATM Banking Simulator",
+  image: "media/projects/atm-simulator-output.png",
+  desc: "C++ console-based ATM simulation implementing PIN authentication, balance management, deposits, withdrawals, transfers, and PIN recovery."
+},
    clothShop: {
-    title: "Cloth Shop Management System",
-    image: "media/projects/cloth-shop-output.png",
-    desc: "C++ based console application for managing a cloth shop’s inventory, billing, stock, and administrative controls. Includes stock management, daily sales report, and secure admin access."
-  }
+  title: "Cloth Shop Management System",
+  image: "media/projects/cloth-shop-output.png",
+  desc: "C++ console application for managing shop inventory, billing, stock levels, daily sales records, and administrative operations."
+}
   };
 
   const data = projects[id];
