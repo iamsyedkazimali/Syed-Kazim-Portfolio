@@ -179,3 +179,8 @@ my-portfolio/
 🔗 LinkedIn: https://www.linkedin.com/in/iamsyedkazimali
 💻 GitHub: https://github.com/iamsyedkazimali
 🌐 Portfolio: https://iamsyedkazimali.github.io/Syed-Kazim-Portfolio/
+
+
+⭐ Support
+
+If you find this portfolio useful or interesting, consider giving the repository a ⭐ on GitHub.
