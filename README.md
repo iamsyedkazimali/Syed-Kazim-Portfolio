@@ -170,3 +170,12 @@ my-portfolio/
 │   └── achievement/
 │
 └── thank-you.html
+
+
+
+> Contact
+📧 Email: syedkazmi2872@gmail.com
+📍 Location: Hyderabad, Sindh, Pakistan
+🔗 LinkedIn: https://www.linkedin.com/in/iamsyedkazimali
+💻 GitHub: https://github.com/iamsyedkazimali
+🌐 Portfolio: https://iamsyedkazimali.github.io/Syed-Kazim-Portfolio/
